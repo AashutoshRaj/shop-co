@@ -4,14 +4,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-import { Box, Button } from "@mui/material";
+import { Box} from "@mui/material";
 import productImage from "../../../../../assets/Images/bannerImage1.png";
 import StarIcon from "@mui/icons-material/Star";
-import { border, color, display, fontFamily, fontSize, fontWeight, margin, positions, styled, ThemeProvider } from "@mui/system";
+import {styled} from "@mui/system";
 import Heading from "../../../../ElementsComp/Heading/Heading";
 import ButtonComponentOutline from "../../../../ElementsComp/ButtonComp/ButtonComponent";
 
-const ProductCardStyle = styled(Box)(({ theme }) => ({
+const ProductCardStyle = styled(Box)(() => ({
   display: "flex",
   margin: "55px 0 0",
   gap: "20px",
@@ -74,17 +74,17 @@ const ProductCardStyle = styled(Box)(({ theme }) => ({
 }));
 
 
+interface ProductCardProps {
+  pImage: string;
+  starsRating: JSX.Element;
+  price: string;
+  discount?: string;
+  pName: string;
+  oldPrice?: string;
+}
 
 
-
-const Productcards = ({
-  pImage,
-  starsRating,
-  price,
-  discount,
-  pName,
-  oldPrice,
-}) => {
+const Productcards: React.FC<ProductCardProps>= ({pImage, starsRating,price,discount,pName,oldPrice,}):any => {
   return (
     <>
       <Box className="cardProdt">
@@ -170,7 +170,8 @@ const TopProductCard = () => {
        
         <Box   className='outline' style={{display: 'flex',justifyContent: 'center', alignItems: 'center', marginTop:"36px"}} >
             <ButtonComponentOutline
-                buttonTitle='ViewAll'          
+                buttonTitle='ViewAll'  
+                className=""        
             />
           
         </Box>       

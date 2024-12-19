@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import { color, fontSize, margin, styled } from "@mui/system";
+import {styled } from "@mui/system";
 
-const CountValueStyle = styled(Box)(({ theme }) => ({
+const CountValueStyle = styled(Box)(() => ({
   display: "flex",
   gap: "64px",
   marginTop: "48px",
@@ -19,7 +19,13 @@ const CountValueStyle = styled(Box)(({ theme }) => ({
   },
 }));
 
-const AllCounts = ({ countValue, subLine }) => {
+interface AllCounts {
+  countValue: string;
+  subLine: string;
+
+}
+
+const AllCounts: React.FC<AllCounts> = ({ countValue, subLine }) => {
   return (
     <Box>
       <h2>{countValue}</h2>

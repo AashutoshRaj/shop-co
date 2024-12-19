@@ -4,15 +4,18 @@ import LogoIcon from "../../../assets/Icons/IconLogo/Logo";
 import { Container, styled } from "@mui/system";
 
 
+const FooterStyleing = styled(Box)(() => ({
+ 
+}));
+
+
 const FooterMain = ():any => {
   return (
     <Container
       className="footerQuickLinks"
       maxWidth="xl"
       sx={{ maxWidth: "1270px!important", padding: "0 0px!important" }}
-    >
-
-    
+    >   
       <Grid container spacing={0}>
         <Grid item xs={4}>
           <Box className="footerAbout">

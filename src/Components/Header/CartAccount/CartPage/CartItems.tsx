@@ -1,5 +1,4 @@
-import { Box, Button, Fade, Paper, Popper, PopperPlacementType, styled, Typography } from '@mui/material';
-import React from 'react'
+import {Box, Button, styled} from '@mui/material';
 import IconCart from '../../../../assets/Icons/IconLogo/IconCart/IconCart';
 const CartStyling = styled(Box)(() => ({
     button: {
@@ -11,32 +10,21 @@ const CartStyling = styled(Box)(() => ({
   }));
 const CartItems = () => {
 
-    const [open, setOpen] = React.useState(false);
-    const [placement, setPlacement] = React.useState<PopperPlacementType>();
+    // const [open, setOpen] = React.useState(false);
+    // const [placement, setPlacement] = React.useState<PopperPlacementType>();
   
-    const handleClick =
-      (newPlacement: PopperPlacementType) =>
-      (event: React.MouseEvent<HTMLButtonElement>) => {      
-        setOpen((prev) => placement !== newPlacement || !prev);
-        setPlacement(newPlacement);
-      };
+    // const handleClick =
+    //   (newPlacement: PopperPlacementType) =>
+    //   (event: React.MouseEvent<HTMLButtonElement>) => {      
+    //     setOpen((prev) => placement !== newPlacement || !prev);
+    //     setPlacement(newPlacement);
+    //   };
 
 
   return (
     <CartStyling>
-        <Box>
-        <Popper open={open} placement={placement}>
-          {({ TransitionProps }) => (
-            <Fade {...TransitionProps}>
-              <Paper>
-                <Typography sx={{ p: 2 }}>
-                  The content of the Popper.
-                </Typography>
-              </Paper>
-            </Fade>
-          )}
-        </Popper>
-        <Button onClick={handleClick("bottom-start")}>
+        <Box>      
+        <Button>
           {" "}
           <IconCart />
         </Button>

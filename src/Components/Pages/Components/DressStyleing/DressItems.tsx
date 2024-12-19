@@ -1,22 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import Heading from "../../../ElementsComp/Heading/Heading";
-import {
-  borderRadius,
-  color,
-  height,
-  maxHeight,
-  maxWidth,
-  positions,
-  styled,
-  width,
-} from "@mui/system";
+import { styled} from "@mui/system";
 import fromal from "../../../../assets/Images/fromal.png";
 import casual from "../../../../assets/Images/dress2.png";
 import party from "../../../../assets/Images/dress3.png";
 import gym from "../../../../assets/Images/dress4.png";
 import { Link } from "react-router-dom";
 
-const BrowseDressStyle = styled(Box)(({ theme }) => ({
+const BrowseDressStyle = styled(Box)(() => ({
   backgroundColor: "#F0F0F0",
   borderRadius: "40px",
   padding: "70px 64px",
@@ -62,7 +53,7 @@ const BrowseDressStyle = styled(Box)(({ theme }) => ({
   },
 }));
 
-const BrowseDress = ({ dressName, dressImage }) => {
+const BrowseDress = ({ dressName, dressImage }:any) => {
   return (
     <>
       <Link to='' className="dressCarsBlock">

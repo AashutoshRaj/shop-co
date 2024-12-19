@@ -1,21 +1,22 @@
-import {Link, styled } from "@mui/material"
+import {Box, Link, styled } from "@mui/material"
 
 
-const NavBarStyle = styled()(() => ({
+const NavBarStyle = styled(Box)(() => ({
   flex: '0 0 40%',
   display: 'flex',
-  gap:"24px",
-  button:{
-    color:"black",
-    textTransform: "capitalize",
-    fontSize:"16px",
-    }
+  gap: '24px',
+  button: {
+    color: 'black',
+    textTransform: 'capitalize',
+    fontSize: '16px',
+  },
 }));
 
 
 const NavBar = () => {
   return (
     <NavBarStyle>
+    
       <Link
      
         variant="body2"
