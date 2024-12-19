@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Box, Tab, Tabs } from "@mui/material";
 import Review from "../../Components/Reviews/Review";
-import { color, fontFamily, fontWeight, styled } from "@mui/system";
+import {styled } from "@mui/system";
 
-const ReviewRatingStyle = styled(Box)(({ theme }) => ({
+const ReviewRatingStyle = styled(Box)(() => ({
    ".tabsButton":{
         ".MuiTabs-flexContainer":{
             button:{
@@ -36,7 +36,7 @@ const TabReviewDetails = () => {
   }
 
   function CustomTabPanel(props: TabPanelProps) {
-    const { children, value, index, ...other } = props;
+    const { children, value, index, ...other }:any = props;
 
     return (
       <div
@@ -46,7 +46,10 @@ const TabReviewDetails = () => {
         aria-labelledby={`simple-tab-${index}`}
         {...other}
       >
+      
+
         {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      
       </div>
     );
   }

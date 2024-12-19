@@ -1,11 +1,11 @@
 import { Box, CardContent, Rating, Typography } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
 import Heading from "../../../ElementsComp/Heading/Heading";
-import { margin, styled } from "@mui/system";
-import Swiper from "swiper";
-import { SwiperClass, SwiperSlide } from "swiper/react";
+import { styled } from "@mui/system";
 
-const ReviewCardStyle = styled(Box)(({ theme }) => ({
+
+
+const ReviewCardStyle = styled(Box)(() => ({
     margin:"80px 0",
   ".reviewSlider": {
     marginTop:"40px",
@@ -41,7 +41,7 @@ const labels: { [index: string]: string } = {
   5: "Excellent+",
 };
 
-const ReviewCard = ({ rating, customeName, custormerReview }) => {
+const ReviewCard = ({ rating, customeName, custormerReview }:{ rating:any, customeName:string, custormerReview:string }) => {
   const value = 3.5;
   return (
     <CardContent className="revCards">
@@ -63,7 +63,7 @@ const ReviewCard = ({ rating, customeName, custormerReview }) => {
   );
 };
 
-const Review = ({className}) => {
+const Review = ({className}:any) => {
   const reviewCardBlock = [
     {
       rating: <StarIcon />,
@@ -105,7 +105,7 @@ const Review = ({className}) => {
 
   return (
     <ReviewCardStyle className={className}>
-      <Heading headingValue="OUR HAPPY CUSTOMERS" variant="h2" />
+      <Heading headingValue="OUR HAPPY CUSTOMERS" variant="h2" className={className}/>
       <Box className="reviewSlider">
         {reviewCardBlock.map((value, index) => (
           <ReviewCard

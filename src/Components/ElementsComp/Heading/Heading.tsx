@@ -1,6 +1,6 @@
 import { Box, styled, Typography } from "@mui/material";
 
-const HeadingH = styled(Box)(({theme}) => ({
+const HeadingH = styled(Box)(() => ({
   
   h1:{   
     fontSize:"64px",
@@ -21,8 +21,7 @@ const HeadingH = styled(Box)(({theme}) => ({
     h3: {
       color: "#ffffff",   
       fontFamily:"'FONTSPRING DEMO - Integral CF'",
-      fontWeight:"bold",
-      textAlign:"center",
+      fontWeight:"bold",      
       textAlign:"left",
       fontSize:"40px",
     },
@@ -31,8 +30,7 @@ const HeadingH = styled(Box)(({theme}) => ({
       h3: {
         color: "#000000",   
         fontFamily:"'FONTSPRING DEMO - Integral CF'",
-        fontWeight:"bold",
-        textAlign:"center",
+        fontWeight:"bold",       
         textAlign:"left",
         fontSize:"40px",
       },
@@ -40,7 +38,7 @@ const HeadingH = styled(Box)(({theme}) => ({
 }));
 
 
-const Heading = ({headingValue, variant, className}) => {
+const Heading = ({headingValue, variant, className}:any) => {
   return (
     <HeadingH>
       <Box className={className}>
