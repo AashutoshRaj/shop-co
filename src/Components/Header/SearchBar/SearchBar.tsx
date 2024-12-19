@@ -1,9 +1,9 @@
-import { Search } from "@mui/icons-material"
+
 import {  Box,} from "@mui/material"
-import { color, styled } from "@mui/system";
+import {styled } from "@mui/system";
 import IconSearch from "../../../assets/Icons/IconLogo/IconSearch/IconSearcj";
 
-const SearchBarStyle = styled(Box)(({theme}) => ({
+const SearchBarStyle = styled(Box)(() => ({
   flex: '0 0 60%',
   position:"relative",
   input:{

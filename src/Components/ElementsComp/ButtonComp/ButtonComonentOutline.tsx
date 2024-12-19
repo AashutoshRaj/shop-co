@@ -4,6 +4,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
+import { FC } from "react";
 
 const theme = createTheme({
   components: {
@@ -51,7 +52,13 @@ const theme = createTheme({
   },
 });
 
-const ButtonComponentOutline = ({className, buttonTitle}) => {
+interface ButtonComponentOutline {
+  className: string;  
+  buttonTitle: string;
+}
+
+
+const ButtonComponentOutline: FC<ButtonComponentOutline> = ({className, buttonTitle}):any => {
   return (
     <ThemeProvider theme={theme}>
       <Box className={className}>

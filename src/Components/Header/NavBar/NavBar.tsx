@@ -1,8 +1,7 @@
 import {Link, styled } from "@mui/material";
 import Box from "@mui/material/Box";
-import React from "react";
 
-const NavBarStyle = styled(Box)(({theme}) => ({
+const NavBarStyle = styled(Box)(() => ({
   flex: '0 0 40%',
   display: 'flex',
   gap:"24px",

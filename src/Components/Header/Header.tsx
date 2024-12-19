@@ -5,7 +5,7 @@ import NavBar from "./NavBar/NavBar";
 import SearchBar from "./SearchBar/SearchBar";
 
 
-const HeaderTop = styled(Box)(({ theme }) => ({
+const HeaderTop = styled(Box)(() => ({
   display: "grid",
   gridTemplateColumns: "repeat(12, 1fr)",
   gap: "15px",

@@ -2,7 +2,6 @@ import { Box, Button, Grid, Rating } from "@mui/material";
 import Heading from "../../../ElementsComp/Heading/Heading";
 import { styled } from "@mui/system";
 import ButtonComponent from "../../../ElementsComp/ButtonComp/ButtonComponent";
-
 import { useState } from "react";
 import { AddCircleOutline } from "@mui/icons-material";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";

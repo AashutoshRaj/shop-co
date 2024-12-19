@@ -4,16 +4,11 @@ import "./BannerStyle.js";
 import bannerImage from "../../../../assets/Images/bannerImage1.png";
 import ButtonComponent from "../../../ElementsComp/ButtonComp/ButtonComponent.js";
 import {
-  fontFamily,
-  margin,
-  maxWidth,
-  padding,
-  positions,
   styled,
-  width,
+
 } from "@mui/system";
 import Counts from "./Counts/Counts.js";
-import IconStar from "../../../../assets/Icons/IconLogo/IconStar/IconStar.js";
+// import IconStar from "../../../../assets/Icons/IconLogo/IconStar/IconStar.js";
 
 const BannerStyling = styled(Box)(({}) => ({
   background: "#f2f0f1",
@@ -57,7 +52,7 @@ const BannerStyling = styled(Box)(({}) => ({
   },
 }));
 
-const Banner = () => {
+const Banner = ({}) => {
   return (
     <>
       <BannerStyling>
@@ -72,15 +67,15 @@ const Banner = () => {
               designed to bring out your individuality and cater to your sense
               of style.
             </Typography>
-            <ButtonComponent buttonTitle="shop now" />
+            <ButtonComponent buttonTitle="shop now"  className=''/>
             <Counts />
           </Grid>
           <Grid item xs={12} md={6} className="bannerImage">
             <Box>
               <img src={bannerImage} alt="image" />
             </Box>
-            <IconStar className="bigStar" />
-            <IconStar className="smallStar" />
+            {/* <IconStar className="bigStar" />
+            <IconStar className="smallStar" /> */}
           </Grid>
         </Grid>
       </BannerStyling>

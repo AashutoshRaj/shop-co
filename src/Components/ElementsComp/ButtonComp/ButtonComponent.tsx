@@ -4,6 +4,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
+import { FC } from "react";
 
 const theme = createTheme({
   components: {
@@ -69,8 +70,13 @@ const theme = createTheme({
     },
   },
 });
+interface ButtonComponent {
+  className: string;
+  buttonTitle: string;
+}
 
-const ButtonComponent = ({ buttonTitle, className }) => {
+
+const ButtonComponent: FC<ButtonComponent> = ({ buttonTitle, className }):any => {
   return (
       <ThemeProvider theme={theme}>
       <Button className={className}>{buttonTitle}</Button>
