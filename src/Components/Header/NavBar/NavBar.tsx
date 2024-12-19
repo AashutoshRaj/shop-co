@@ -1,7 +1,7 @@
-import {Link, styled } from "@mui/material";
-import Box from "@mui/material/Box";
+import {Link, styled } from "@mui/material"
 
-const NavBarStyle = styled(Box)(() => ({
+
+const NavBarStyle = styled()(() => ({
   flex: '0 0 40%',
   display: 'flex',
   gap:"24px",

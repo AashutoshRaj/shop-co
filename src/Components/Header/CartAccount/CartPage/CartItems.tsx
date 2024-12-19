@@ -1,7 +1,7 @@
 import { Box, Button, Fade, Paper, Popper, PopperPlacementType, styled, Typography } from '@mui/material';
 import React from 'react'
 import IconCart from '../../../../assets/Icons/IconLogo/IconCart/IconCart';
-const CartStyling = styled(Box)(({ theme }) => ({
+const CartStyling = styled(Box)(() => ({
     button: {
       background: "transparent",
       border: "0",

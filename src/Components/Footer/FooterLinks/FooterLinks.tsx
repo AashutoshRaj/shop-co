@@ -1,42 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import Logo from "../../Header/Logo/Logo";
 import LogoIcon from "../../../assets/Icons/IconLogo/Logo";
-import { color, Container, fontSize, margin, styled, textTransform } from "@mui/system";
+import { Container, styled } from "@mui/system";
 
-const FooterStyleing = styled(Box)(({ theme }) => ({
-  backgroundColor: "#F0F0F0",
-  width: "100vw",
-  transform: "translateX(-50%)",
-  marginLeft: "50%",
-  padding: "140px 15px 50px",
-  ".footerQuickLinks": {
-    display: "flex",
-    ".footerAbout": {},
-    ul:{
-      listStyle: 'none',
-      li:{
-        a:{
-          fontSize: '16px',
-            lineHeight: '40px',
-            textDecoration: 'none',
-            color: 'black',
-            opacity: '0.6',
-            fontFamily: '\'Satoshi\'',
-            fontWeight: '400',
-            "&:hover":{
-              opacity:"1",
-            }
-        },
-        "&:first-child":{
-            fontSize:"16px",
-            marginBottom:"20px",
-            textTransform:"uppercase",
-        }
-      },
-    },
-  },
-}));
 
 const FooterMain = ():any => {
   return (
@@ -45,6 +11,8 @@ const FooterMain = ():any => {
       maxWidth="xl"
       sx={{ maxWidth: "1270px!important", padding: "0 0px!important" }}
     >
+
+    
       <Grid container spacing={0}>
         <Grid item xs={4}>
           <Box className="footerAbout">
