@@ -1,18 +1,11 @@
 import { Box, Button, Grid, Rating } from "@mui/material";
 import Heading from "../../../ElementsComp/Heading/Heading";
-import {
-  display,
-  height,
-  maxWidth,
-  styled,
-  textAlign,
-  width,
-} from "@mui/system";
+import { styled } from "@mui/system";
 import ButtonComponent from "../../../ElementsComp/ButtonComp/ButtonComponent";
-import RemoveIcon from "@mui/icons-material/Remove";
-import AddIcon from "@mui/icons-material/Add";
-import { useEffect, useState } from "react";
-import TopProductCard from "../../Components/AllProducts/ProductCard/TopSellingProducts";
+
+import { useState } from "react";
+import { AddCircleOutline } from "@mui/icons-material";
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 const ProductDetailsStyle = styled(Box)(({}) => ({
   marginBottom: "80px",
   ".pridListBlock": {
@@ -104,7 +97,7 @@ const ProductInfoBlock = () => {
           headingValue="One Life Graphic T-shirt"
           className="dark"
         />
-        <Rating sx={{margin:"15px 0"}} />
+        <Rating sx={{ margin: "15px 0" }} />
         <Box className="pridListBlock">
           <p className="regularPrice">$260</p>
           <p className="oldPrice">$300</p>
@@ -130,11 +123,11 @@ const ProductInfoBlock = () => {
           <Grid item xs={4}>
             <Box className="cartAddValue">
               <Button onClick={removeUnit}>
-                <RemoveIcon />
+                <RemoveCircleOutlineIcon />
               </Button>
               <input type="" className="" value={unit} />
               <Button onClick={addUnit}>
-                <AddIcon />
+                <AddCircleOutline />
               </Button>
             </Box>
           </Grid>
@@ -143,9 +136,7 @@ const ProductInfoBlock = () => {
           </Grid>
         </Grid>
       </Box>
-      
     </ProductDetailsStyle>
-    
   );
 };
 

@@ -2,11 +2,11 @@ import { Box, createTheme, ThemeProvider } from "@mui/material"
 import Banner from "../Components/Banner/Banner"
 import BannerSlide from "../Components/BrandsSlide/BannerSlide";
 import ProductCard from "../Components/AllProducts/ProductCard/ProductCard";
-import TopSelling from "../Components/AllProducts/ProductCard/TopSellingProducts";
+
 import TopProductCard from "../Components/AllProducts/ProductCard/TopSellingProducts";
 import DressItems from "../Components/DressStyleing/DressItems";
 import Review from "../Components/Reviews/Review";
-import Footer from "../../Footer/NewsLetter/Footer/Footer";
+
 
 
 const theme = createTheme({
@@ -29,7 +29,7 @@ const Home = () => {
         <TopProductCard/>
         <DressItems/>
         <Review/>
-     {/* <Footer/> */}
+  
     </Box>
     </ThemeProvider>
   )
