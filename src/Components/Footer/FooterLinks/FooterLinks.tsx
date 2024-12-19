@@ -38,7 +38,7 @@ const FooterStyleing = styled(Box)(({ theme }) => ({
   },
 }));
 
-const FooterMain = ({ FHeading, LinkQuick }) => {
+const FooterMain = ():any => {
   return (
     <Container
       className="footerQuickLinks"

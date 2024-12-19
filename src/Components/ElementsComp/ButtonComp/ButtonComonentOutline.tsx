@@ -51,7 +51,7 @@ const theme = createTheme({
   },
 });
 
-const ButtonComponentOutline = (className) => {
+const ButtonComponentOutline = ({className, buttonTitle}) => {
   return (
     <ThemeProvider theme={theme}>
       <Box className={className}>

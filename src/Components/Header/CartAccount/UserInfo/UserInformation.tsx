@@ -2,7 +2,7 @@ import { Box, styled } from '@mui/material'
 
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
-const UserProfile = styled(Box)(({ theme }) => ({
+const UserProfile = styled(Box)(() => ({
     button: {
       background: "transparent",
       border: "0",

@@ -4,7 +4,7 @@ import Heading from "../../ElementsComp/Heading/Heading";
 import ButtonComponent from "../../ElementsComp/ButtonComp/ButtonComponent";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
-const NewsLetterStyle = styled(Box)(({ theme }) => ({
+const NewsLetterStyle = styled(Box)(() => ({
   backgroundColor: "#000000",
   padding: "43px 64px",
   borderRadius: "20px",
