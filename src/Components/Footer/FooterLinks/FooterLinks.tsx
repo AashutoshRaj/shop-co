@@ -1,11 +1,34 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import LogoIcon from "../../../assets/Icons/IconLogo/Logo";
-import { Container, styled } from "@mui/system";
+import { Container, lineHeight, margin, styled } from "@mui/system";
 
 
 const FooterStyleing = styled(Box)(() => ({
- 
+  width: '100vw',
+  transform: 'translateX(-50%)',
+  marginLeft: '50%',
+  paddingTop: '150px',
+  background: '#F0F0F0',
+  ul:{
+    listStyle:"none",
+    li:{
+      "&:first-child":{
+        marginBottom:"25px",
+      },
+      a:{
+        color:"#000000",
+        textDecoration:"none",
+        lineHeight:"30px",
+        opacity:"0.6",
+      },
+      "&:hover":{
+        a:{
+          opacity:"1",
+        }
+      }
+    }
+  }
 }));
 
 
