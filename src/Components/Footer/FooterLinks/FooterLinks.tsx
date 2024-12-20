@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import LogoIcon from "../../../assets/Icons/IconLogo/Logo";
-import { Container, lineHeight, margin, styled } from "@mui/system";
+import { Container, styled } from "@mui/system";
 
 
 const FooterStyleing = styled(Box)(() => ({
