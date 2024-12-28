@@ -5,10 +5,11 @@ const NavBarStyle = styled(Box)(() => ({
   flex: '0 0 40%',
   display: 'flex',
   gap: '24px',
-  button: {
+  a: {
     color: 'black',
     textTransform: 'capitalize',
     fontSize: '16px',
+    textDecoration:"none"
   },
 }));
 
