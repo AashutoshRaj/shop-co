@@ -1,5 +1,5 @@
-import {Box, Link, styled } from "@mui/material"
-
+import {Box, styled } from "@mui/material"
+import { Link } from "react-router-dom"
 
 const NavBarStyle = styled(Box)(() => ({
   flex: '0 0 40%',
@@ -18,40 +18,24 @@ const NavBar = () => {
     <NavBarStyle>
     
       <Link
-     
-        variant="body2"
-        underline="none"
+        to='/catagories'
+        
        
       >
        Shop
       </Link>
       <Link
-        component="button"
-        variant="body2"
-        underline="none"
-        onClick={() => {
-          console.info("I'm a button.");
-        }}
+       to='/catagories'
       >
        on sale
       </Link>
       <Link
-        component="button"
-        variant="body2"
-        underline="none"
-        onClick={() => {
-          console.info("I'm a button.");
-        }}
+        to='/catagories'
       >
         new arrivals
       </Link>
       <Link
-        component="button"
-        variant="body2"
-        underline="none"
-        onClick={() => {
-          console.info("I'm a button.");
-        }}
+       to='/catagories'
       >
        brands
       </Link>

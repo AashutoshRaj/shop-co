@@ -4,6 +4,7 @@ import Review from "../../Components/Reviews/Review";
 import {styled } from "@mui/system";
 
 const ReviewRatingStyle = styled(Box)(() => ({
+  marginTop:"80px",
    ".tabsButton":{
         ".MuiTabs-flexContainer":{
             button:{

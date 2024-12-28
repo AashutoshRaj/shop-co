@@ -23,8 +23,7 @@ const ProductDetail = () => {
         </Grid> 
         </Box>
         <DetailsReviewTab/>
-        <TopProductCard     
-        />
+        <TopProductCard />
     </ProductDatailStyle>
   )
 }

@@ -7,6 +7,7 @@ import Layout from './Layout.tsx'
 
 import ProductDetail from './Components/Pages/ProductDetailPage/ProductDetail.tsx'
 import Home from './Components/Pages/HomePage/Home.tsx'
+import CatagoryPage from './Components/Pages/CatagoryPage/CatagoryPage.tsx'
 
 
 
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Home/>}/>  
           <Route path='/productdetail' element={<ProductDetail/>}/>  
+          <Route path='/catagories' element={<CatagoryPage/>}/>  
     </Route>
   )
 )
