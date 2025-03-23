@@ -7,7 +7,7 @@ import RadioButtonSize from "../../Components/RadioButton/RadioButtonSize";
 
 const FilterStyle = styled(Box)(() => ({
   border: "1px solid #f2f2f2",
-  borderRadius: "20px",
+  borderRadius: "20px",   
   padding: "20px 24px",
   ".itemsAccording":{
     paddingBottom: '24px',
