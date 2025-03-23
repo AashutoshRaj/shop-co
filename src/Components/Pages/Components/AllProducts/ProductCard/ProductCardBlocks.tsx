@@ -9,7 +9,6 @@ import productImage from "../../../../../assets/Images/bannerImage1.png";
 import StarIcon from "@mui/icons-material/Star";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
-import ProductInfo from "../../../ProductDetailPage/ProductInfo/ProductInfo";
 
 const ProductCardStyle = styled(Box)(() => ({ 
   display: "flex",

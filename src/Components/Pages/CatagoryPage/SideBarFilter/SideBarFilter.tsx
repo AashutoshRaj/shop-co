@@ -135,16 +135,16 @@ const SideBarFilter = () => {
       setDressIsVisible((prev) => !prev); // Toggle the state
     };
 // Size Filter
-interface SubItem {
-  id: number;
-  itemProducts: number;
-}
+// interface SubItem {
+//   id: number;
+//   itemProducts: number;
+// }
 
-interface Item {
-  id: number;
-  itemsValues: string;
-  subItemsValues?: SubItem[]; // Optional as not all items have it
-}
+// interface Item {
+//   id: number;
+//   itemsValues: string;
+//   subItemsValues?: SubItem[]; // Optional as not all items have it
+// }
   const itemsValues = [
     {
       id:1,
@@ -176,18 +176,11 @@ interface Item {
         </Box>
         <Box className="itemsAccording">
             <ul>
-            {itemsValues.map((items, index)=>(
+            {itemsValues.map((items)=>(
                   <li>{items.itemsValues}<button onClick={toggleVisibility}>
                   {isVisible ? <IconArrow /> : <IconArrow />}
                 </button>
-                {/* <ul className="ItemsListing">
-                    {itemsValues.map((item) =>
-                      item.subItemsValues?.map((subItem) => (
-                        <li key={subItem.id}>{subItem.itemProducts}</li>
-                      ))
-                    )}
-                  </ul> */}
-                
+                            
                 </li>
             ))}
 
@@ -245,7 +238,7 @@ interface Item {
           {isDressVisible && (
            <Box className="itemsAccording">
            <ul>
-           {itemsValues.map((items, index)=>(
+           {itemsValues.map((items)=>(
                  <li>{items.itemsValues}<button onClick={toggleVisibility}>
                  {isVisible ? <IconArrow /> : <IconArrow />}
                </button>

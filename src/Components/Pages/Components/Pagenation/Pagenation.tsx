@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import { borderColor, Box, styled } from "@mui/system";
+import { Box, styled } from "@mui/system";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 interface PaginationBlockProps {
