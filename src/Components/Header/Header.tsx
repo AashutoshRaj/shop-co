@@ -3,6 +3,7 @@ import CartAccount from "./CartAccount/CartAccount";
 import Logo from "./Logo/Logo";
 import NavBar from "./NavBar/NavBar";
 import SearchBar from "./SearchBar/SearchBar";
+import CartPopUp from "../Pages/Components/CartPopUp/CartPopUp";
 
 
 const HeaderTop = styled(Box)(() => ({
@@ -14,6 +15,7 @@ const HeaderTop = styled(Box)(() => ({
   maxWidth:"1270px",
   margin:"0 auto 15px",
   padding:"0 15px",
+  position:"relative",
   
   ".logoBlock ": {
     gridColumn: "span 2",
@@ -44,6 +46,11 @@ const Header = () => {
       <Box className="cartAccountBlock">
         <CartAccount />
       </Box>
+
+      <Box className="">
+          <CartPopUp/>
+      </Box>
+
     </HeaderTop>
   );
 };

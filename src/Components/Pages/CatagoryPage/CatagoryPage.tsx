@@ -14,7 +14,7 @@ const CatagoryPage = () => {
           <Grid item xs={3}>
             <SideBarFilter/>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={9}>
           <ProductsCategories/>
           </Grid>
         </Grid>

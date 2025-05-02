@@ -73,13 +73,15 @@ const theme = createTheme({
 interface ButtonComponent {
   className: string;
   buttonTitle: string;
+  onClick:any;
+  svgIcon:any;
 }
 
 
-const ButtonComponent: FC<ButtonComponent> = ({ buttonTitle, className }):any => {
+const ButtonComponent: FC<ButtonComponent> = ({ buttonTitle, className, onClick, svgIcon }):any => {
   return (
       <ThemeProvider theme={theme}>
-      <Button className={className}>{buttonTitle}</Button>
+          <Button className={className} onClick={onClick}>{buttonTitle} {svgIcon} </Button>
     </ThemeProvider>
   );
 };

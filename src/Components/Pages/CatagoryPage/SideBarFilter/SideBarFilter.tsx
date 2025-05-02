@@ -57,14 +57,14 @@ const FilterStyle = styled(Box)(() => ({
       flex: "0 0 100%",
       marginTop:"20px",
     },
-    "&:first-child":{
+    "&:first-of-type":{
       paddingBottom:"24px",
       borderBottom: "1px solid #f2f2f2",
     },
-    "&:not(:first-child)": {
+    "&:not(:first-of-type)": {
       margin: "24px 0",
     },
-    "&:not(:first-child, :last-child)": {
+    "&:not(:first-of-type, :last-child)": {
       borderBottom: "1px solid #f2f2f2",
       paddingBottom: "24px",
     },

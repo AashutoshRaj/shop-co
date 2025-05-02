@@ -15,6 +15,7 @@ const HeadingH = styled(Box)(() => ({
     fontWeight:"bold",
     textAlign:"center",
    
+   
   },
   ".ligntScheme": {
   

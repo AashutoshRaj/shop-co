@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,6 +9,7 @@ import productImage from "../../../../../assets/Images/bannerImage1.png";
 import StarIcon from "@mui/icons-material/Star";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
+import ButtonComponent from "../../../../ElementsComp/ButtonComp/ButtonComponent";
 
 const ProductCardStyle = styled(Box)(() => ({ 
   display: "flex",
@@ -38,9 +39,32 @@ const ProductCardStyle = styled(Box)(() => ({
           left: "50%",
           transform: "translate(-50%,-50%)",
         },
+
+        ".cartIcon":{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%,-50%) scale(0)',
+          transition:"transform 0.2s linear",
+          width: '100%',
+          display:"flex",
+          alignItem:"center",
+          justifyContent: 'center',
+          button:{
+            textAlign:"center",
+            padding:"0 25px",
+          },
+        },
+        "&:hover":{
+          ".cartIcon":{           
+            transform: 'translate(-50%,-50%) scale(1)',
+           
+          }, 
+        }
+        
       },
 
-      ".pridListBlock": {
+      ".pridListBlock": {   
         display: "flex",
         alignItems: "center",
         gap: "10px",
@@ -98,12 +122,23 @@ const ProductCard: React.FC<ProductCardProps> = ({
   oldPrice,
   className,
 }) => {
+
+  const [cartValue, setCartValue] = useState<boolean>(true);
+
+  const addCart = () => {
+    console.log("Current Cart Value:", cartValue); // Log the current value
+    setCartValue(cartValue)
+   
+  };
+
   return (
     <Box className={className}>
       <Card sx={{ maxWidth: 345 }} className="cardOuter">
         <CardActionArea>
           <Box className="productImage">
             <CardMedia component="img" image={pImage} alt={pName} />
+                <ButtonComponent buttonTitle="Add to Cart" className="cartIcon " onClick={addCart}  />
+                {/* <button onClick={addCart}>add cart</button> */}
           </Box>
           <CardContent>
             <Typography gutterBottom variant="h5">

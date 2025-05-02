@@ -10,8 +10,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ className }) => {
   return (
     <Box sx={{ padding: "72px 0 64px" }} className={className}>
       <Heading headingValue="NEW ARRIVALS" variant="h2" />
-      <ProductCardBlocks className="" />
-      
+      <ProductCardBlocks className="" />      
       <Box
         className="outline"
         sx={{
@@ -19,8 +18,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ className }) => {
           justifyContent: "center",
           alignItems: "center",
           marginTop: "36px",
-        }}
-      >
+        }}>
         <ButtonComponentOutline buttonTitle="View All" className="" />
       </Box>
     </Box>

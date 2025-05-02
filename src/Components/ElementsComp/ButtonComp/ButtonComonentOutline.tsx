@@ -62,7 +62,7 @@ const ButtonComponentOutline: FC<ButtonComponentOutline> = ({className, buttonTi
   return (
     <ThemeProvider theme={theme}>
       <Box className={className}>
-       <Button>{buttonTitle}</Button>
+           <Button>{buttonTitle}</Button>
       </Box>
     </ThemeProvider>
   );

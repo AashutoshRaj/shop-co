@@ -13,7 +13,7 @@ const FooterStyleing = styled(Box)(() => ({
   ul:{
     listStyle:"none",
     li:{
-      "&:first-child":{
+      "&:first-of-type":{
         marginBottom:"25px",
       },
       a:{

@@ -112,10 +112,10 @@ const ProductInfoBlock = () => {
         <Box className="chooseValue">
           <label>Choose Size</label>
           <Box className="sizeButtons">
-            <ButtonComponent buttonTitle="Small" className="grayButton" />
-            <ButtonComponent buttonTitle="Medium" className="grayButton" />
-            <ButtonComponent buttonTitle="Large" className="grayButton" />
-            <ButtonComponent buttonTitle="X-Large" className="grayButton" />
+            <ButtonComponent buttonTitle="Small" className="grayButton"  onClick={""}/>
+            <ButtonComponent buttonTitle="Medium" className="grayButton"  onClick={""}/>
+            <ButtonComponent buttonTitle="Large" className="grayButton" onClick={""} />
+            <ButtonComponent buttonTitle="X-Large" className="grayButton"  onClick={""}/>
           </Box>
         </Box>
         <Grid container spacing={0}>
@@ -131,7 +131,7 @@ const ProductInfoBlock = () => {
             </Box>
           </Grid>
           <Grid item xs={8}>
-            <ButtonComponent buttonTitle="Add to Cart" className="fullWidth" />
+            <ButtonComponent buttonTitle="Add to Cart" className="fullWidth" onClick="" />
           </Grid>
         </Grid>
       </Box>

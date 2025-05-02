@@ -30,7 +30,7 @@ const BrowseDressStyle = styled(Box)(() => ({
         objectFit: "cover",
         transition:"all 0.2s linear",
       },
-      "&:not(:first-child, :last-child)": {
+      "&:not(:first-of-type, :last-child)": {
         flex: "0 0 63%",
         maxWidth: "calc(64% - 20px)",
       },
